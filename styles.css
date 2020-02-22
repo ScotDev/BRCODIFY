@@ -56,13 +56,19 @@ input {
   box-shadow: 6px 6px 10px #ccc;
 }
 
-img {
+img#barcode {
   height: 200px;
   width: 400px;
   border-radius: 5px;
   border: 1px solid var(--primary-color);
+  margin-bottom: 100px;
 }
 
 .revealed {
   visibility: visible !important;
+}
+
+.credits a {
+  text-decoration: none;
+  color: var(--primary-color);
 }

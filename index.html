@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="JsBarcode.all.min.js"></script>
-    <title>BRCODE</title>
+    <link rel="icon" href="./img/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <title>BRCODIFY</title>
   </head>
   <body>
-    <h1 class="title">BRCODE</h1>
-    <h2 class="subtitle">Barcode Generator</h2>
+    <h1 class="title">BRCODIFY</h1>
+    <h2 class="subtitle">A simple barcode generator</h2>
     <h3>Format: CODE128</h3>
     <input
       type="text"
@@ -21,7 +28,17 @@
     <button class="btn" id="btn">Generate barcode</button>
 
     <!-- <img src="" id="barcode" /> -->
-    <img src="" id="barcode" style="visibility: hidden;" />
+    <img id="barcode" style="visibility: hidden;" />
+
+    <div class="credits">
+      <a href="https://github.com/ScotDev" target="_blank"
+        >Created by ScotDev <i class="fab fa-github"></i
+      ></a>
+      <span>- powered by the</span>
+      <a href="https://github.com/lindell/JsBarcode"
+        >JsBarcode library by Johan Lindell</a
+      >
+    </div>
 
     <script src="scripts.js"></script>
   </body>
