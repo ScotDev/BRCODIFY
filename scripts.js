@@ -21,9 +21,13 @@ function generate(val) {
 
 }
 
+function reveal() {
+    img.className = "revealed";
+}
+
 
 // btn.addEventListener('click', generate, changeText);
 btn.addEventListener('click', () => {
     generate();
-    changeText();
+    reveal();
 });

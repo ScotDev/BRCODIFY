@@ -32,6 +32,7 @@ input {
   border: 1px solid var(--primary-color);
   outline: 0;
   padding-left: 5px;
+  font-family: inherit;
 }
 
 .btn {
@@ -63,5 +64,5 @@ img {
 }
 
 .revealed {
-  visibility: visible;
+  visibility: visible !important;
 }
