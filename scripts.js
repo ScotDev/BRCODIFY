@@ -4,8 +4,6 @@ const btn = document.getElementById("btn");
 const codeType = document.getElementById("");
 const format = document.getElementById("format");
 
-// const val = input.value;
-
 function generate(val) {
 
     JsBarcode(img, input.value, {
@@ -14,7 +12,7 @@ function generate(val) {
         // width: 20,
         displayValue: true,
         font: "monospace",
-        fontSize: 20,
+        fontSize: 16,
         textPosition: "bottom",
         textAlign: "center"
     });
