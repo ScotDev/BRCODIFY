@@ -1,0 +1,29 @@
+const img = document.querySelector("#barcode")
+const input = document.getElementById("input");
+const btn = document.getElementById("btn");
+const codeType = document.getElementById("");
+const format = document.getElementById("format");
+
+// const val = input.value;
+
+function generate(val) {
+
+    JsBarcode(img, input.value, {
+        format: "CODE128",
+        // height: 10,
+        // width: 20,
+        displayValue: true,
+        font: "monospace",
+        fontSize: 20,
+        textPosition: "bottom",
+        textAlign: "center"
+    });
+
+}
+
+
+// btn.addEventListener('click', generate, changeText);
+btn.addEventListener('click', () => {
+    generate();
+    changeText();
+});
