@@ -89,6 +89,12 @@ img#barcode {
 }
 
 @media (max-width: 350px) {
+  h1 {
+    font-size: 1.7em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
   img#barcode {
     height: 90px;
     margin-bottom: 15px;
@@ -103,6 +109,12 @@ img#barcode {
 }
 
 @media (max-height: 700px) {
+  h1 {
+    font-size: 1.7em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
   img#barcode {
     max-width: 60%;
     height: 20%;
