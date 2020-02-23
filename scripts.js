@@ -1,8 +1,10 @@
 const img = document.querySelector("#barcode")
 const input = document.getElementById("input");
 const btn = document.getElementById("btn");
+const printBtn = document.getElementById("PrintBtn");
 const codeType = document.getElementById("");
-const format = document.getElementById("format");
+
+// const format = document.getElementById("format");
 
 function generate(val) {
 
@@ -16,16 +18,35 @@ function generate(val) {
         textPosition: "bottom",
         textAlign: "center"
     });
-
-}
+};
 
 function reveal() {
     img.className = "revealed";
+    printBtn.classList.add("revealed");
+};
+
+
+function imagetoPrint(source) {
+    return "<html><head><script>function step1(){\n" +
+        "setTimeout('step2()', 10);}\n" +
+        "</scri" + "pt></head><body onload='step1()'>\n" +
+        "<img src='" + source + "' /></body></html>";
 }
 
+function printBarCode(source) {
+    const src = document.getElementById("barcode").src;
+    const url = "about:blank";
+    const newWindow = window.open(url, "_new");
+    newWindow.document.open();
+    newWindow.document.write(imagetoPrint(src));
+};
 
-// btn.addEventListener('click', generate, changeText);
 btn.addEventListener('click', () => {
     generate();
     reveal();
+});
+
+printBtn.addEventListener('click', () => {
+    imagetoPrint();
+    printBarCode();
 });

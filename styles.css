@@ -47,7 +47,7 @@ input {
   -moz-box-shadow: 3px 3px 5px #ccc;
   -webkit-box-shadow: 3px 3px 5px #ccc;
   box-shadow: 3px 3px 5px #ccc;
-  margin-bottom: 10vh;
+  margin-bottom: 4vh;
 }
 
 .btn:hover {
@@ -83,8 +83,8 @@ img#barcode {
     max-width: 90%;
     margin-bottom: 40px;
   }
-  button {
-    margin-bottom: 4vh;
+  .btn {
+    margin-bottom: 2vh;
   }
 }
 
@@ -104,7 +104,7 @@ img#barcode {
     width: 90%;
   }
   .btn {
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
   }
 }
 
@@ -121,6 +121,6 @@ img#barcode {
     margin-bottom: 15px;
   }
   .btn {
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
   }
 }
