@@ -39,6 +39,7 @@ function printBarCode(source) {
     const newWindow = window.open(url, "_new");
     newWindow.document.open();
     newWindow.document.write(imagetoPrint(src));
+    newWindow.print();
 };
 
 btn.addEventListener('click', () => {
