@@ -57,8 +57,8 @@ input {
 }
 
 img#barcode {
-  height: 200px;
-  width: 400px;
+  height: 180px;
+  width: 450px;
   border-radius: 5px;
   border: 1px solid var(--primary-color);
   margin-bottom: 100px;

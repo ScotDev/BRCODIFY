@@ -2,7 +2,7 @@ const img = document.querySelector("#barcode")
 const input = document.getElementById("input");
 const btn = document.getElementById("btn");
 const printBtn = document.getElementById("PrintBtn");
-const codeType = document.getElementById("");
+const format = document.getElementById("format");
 
 // const format = document.getElementById("format");
 
@@ -13,7 +13,7 @@ function generate(val) {
         // height: 10,
         // width: 20,
         displayValue: true,
-        font: "monospace",
+        font: "Arial",
         fontSize: 16,
         textPosition: "bottom",
         textAlign: "center"
