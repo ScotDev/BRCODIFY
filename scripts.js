@@ -6,7 +6,7 @@ const format = document.getElementById("format");
 
 function generate(val) {
 
-    JsBarcode(img, input.value, {
+    JsBarcode(img, input.value.toUpperCase(), {
         format: "CODE128",
         // height: 10,
         // width: 20,
