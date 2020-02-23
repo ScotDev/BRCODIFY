@@ -101,10 +101,11 @@ img#barcode {
   }
   input,
   button {
-    width: 90%;
+    width: 85%;
   }
   .btn {
     margin-bottom: 2vh;
+    font-size: 14px;
   }
 }
 
