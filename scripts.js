@@ -13,10 +13,11 @@ function generate(val) {
         // height: 10,
         // width: 20,
         displayValue: true,
-        font: "Arial",
+        font: "monospace",
         fontSize: 16,
         textPosition: "bottom",
-        textAlign: "center"
+        textAlign: "center",
+        fontOptions: "bold"
     });
 };
 
